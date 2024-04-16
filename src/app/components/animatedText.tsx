@@ -82,12 +82,12 @@ export const AnimatedText = ({
                 }} 
                 aria-hidden
             > 
-                {textArray.map((line)=> (
-                    <span className="block">
-                        {line.split(" ").map((word) => (
-                            <span className="inline-block">
-                                {word.split('').map((char) => (
-                                    <motion.span className="inline-block" variants={defaultAnimations}>
+                {textArray.map((line, lineIndex)=> (
+                    <span className="block" key={`line-${lineIndex}`}>
+                        {line.split(" ").map((word, wordIndex) => (
+                            <span className="inline-block" key={`word-${wordIndex}`}>
+                                {word.split('').map((char, charIndex) => (
+                                    <motion.span className="inline-block" variants={defaultAnimations} key={`char-${lineIndex}-${wordIndex}-${charIndex}`}>
                                         {char}
                                     </motion.span>
                                 ))}

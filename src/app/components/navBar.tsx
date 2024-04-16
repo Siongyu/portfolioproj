@@ -24,19 +24,19 @@ const NavBar = () => {
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
 					>
-						<a href="#">About</a>
+						<a href="#about">About</a>
 					</motion.li>
 					<motion.li
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
 					>
-						<a href="#">Project(s)</a>
+						<a href="#project">Project(s)</a>
 					</motion.li>
 					<motion.li
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
 					>
-						<a href="#">Contact</a>
+						<a href="#contact">Contact</a>
 					</motion.li>
 				</ul>
 			</div>

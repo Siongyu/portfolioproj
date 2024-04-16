@@ -8,10 +8,10 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      'phone': {'min': '400px', 'max': '480px'},
-      'tablet': {'min': '640px', 'max': '1024px'},
-      'laptop': '1024px',
-      'desktop': '1280px',
+      'phone': {'min': '300px', 'max': '430px'},
+      'tablet': {'min': '600px', 'max': '1366px'},
+      'laptop': '1280px',
+      'desktop': '2560px',
     },
     colors: { 
       'ghost_white': { 
