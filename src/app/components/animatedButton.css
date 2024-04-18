@@ -165,7 +165,6 @@ a {
 }
 /* <main-style> ============================ */
 .menu__link {
-  color: #fff;
   line-height: 2;
   position: relative;
 }
@@ -175,11 +174,17 @@ a {
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #000;
   position: absolute;
   bottom: -.25rem;
   right: 0;
   transition: right .4s, width .4s, left .4s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu__link::before {
+    background-color: #fff;
+  }
 }
 
 .menu__link:hover::before {

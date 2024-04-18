@@ -17,7 +17,10 @@ const ContactComponent = () => {
                 at my resume as well!
               </span>
               <div className="flex gap-4 phone:justify-between">
-                <button className="ui-btn 3/12 mt-4 phone:w-6/12">
+                <button 
+                  className="ui-btn 3/12 mt-4 phone:w-6/12"
+                  onClick={() => window.open("mailto:loosiongyu@hotmail.com")}
+                >
                   <span className="ml-2 phone:text-sm">
                     Email Me
                   </span>

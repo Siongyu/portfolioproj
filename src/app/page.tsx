@@ -1,6 +1,7 @@
 'use client'
 import AnimatedText from "./components/animatedText";
 import IntroComponent from "./components/introComponent";
+import ProjectComponent from "./components/projectComponent";
 import ContactComponent from "./components/contactComponent";
 
 export default function Home() {
@@ -17,14 +18,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="project" className="h-screen">
-        <div className="flex flex-col items-center">
-          <AnimatedText 
-            text="<Project(s) />"
-            className="font-bold text-2xl"
-          />
-        </div>
-      </section>
+      <ProjectComponent />
 
       <ContactComponent />
     </main>
