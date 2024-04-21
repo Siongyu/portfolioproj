@@ -75,9 +75,9 @@ const config: Config = {
         900: '#cdd7d4' 
       } 
     },
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
 };
+
 export default config;

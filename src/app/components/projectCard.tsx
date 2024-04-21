@@ -17,17 +17,31 @@ const ProjectCard = ({
 }: ProjectCardProps & { githubUrl?: string; liveUrl?: string;
 }) => {
   return (
-    <div className="w-96 h-96 bg-ghost_white-500 rounded-lg border">
-      <div className="w-96 h-96 border">
+    <div className="w-96 h-min phone:w-60 phone:w-60 tablet:w-60 tablet:w-60 rounded-2xl">
+      <div className="border rounded-2xl w-96 h-96 phone:w-60 phone:h-60 tablet:w-60 tablet:h-60">
         <img
-          src="/portfolioScreenShot.png"
-          className="w-max h-full object-contain mx-auto"
+          src={imageUrl}
+          className="w-max h-full object-fill rounded-2xl mx-auto"
         />
       </div>
-      <div className="flex flex-col">
-        <span className="text-center font-bold text-2xl">Project 1</span>
-        <span className="text-center text-lg">Description</span>
-        <span className="text-center text-lg">Tech Stack</span>
+      <div className="flex flex-col mt-3 gap-3">
+        <span className="font-bold uppercase text-xl phone:text-xl tablet:text-xl">{title}</span>
+        <div className="flex flex-wrap gap-1">
+          {techStack.map((tech, index) => (
+            <span 
+              key={index}
+              className="
+                w-fit border border-4 rounded-2xl text-md p-1 
+                hover:cursor-none hover:dark:bg-ghost_white-500 hover:dark:text-eerie_black-500
+                hover:bg-eerie_black-500 hover:text-ghost_white-500
+                phone:text-xs phone:border-2
+                tablet:text-xs tablet:border-2"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        <span className="text-lg text-justify phone:text-sm ">{description}</span>
       </div>
     </div>
   )
