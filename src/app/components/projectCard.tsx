@@ -42,6 +42,29 @@ const ProjectCard = ({
           ))}
         </div>
         <span className="text-lg text-justify phone:text-sm ">{description}</span>
+        <div className="flex gap-4 justify-end">
+          {githubUrl && (
+            <button 
+              className="ui-btn 3/12 mt-4 phone:w-6/12"
+              onClick={() => window.open(githubUrl)}
+            >
+              <span className="ml-2 phone:text-sm">
+                GitHub
+              </span>
+            </button>
+          )}
+
+          {liveUrl && (
+            <button 
+            className="ui-btn 3/12 mt-4 phone:w-6/12"
+            onClick={() => window.open(liveUrl)}
+          >
+            <span className="ml-2 phone:text-sm">
+              Live
+            </span>
+          </button>
+          )}
+        </div>
       </div>
     </div>
   )

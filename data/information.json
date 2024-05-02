@@ -12,5 +12,28 @@
       "link": "https://www.instagram.com/sionggggyu__?igsh=MWE1bm9wczFpYzcxbg==",
       "title": "Instagram"
     }
-  ]
+  ],
+
+  "projects": [
+    {
+      "title": "Portfolio",
+      "techstack": ["NextJs", "TailWindCSS", "Framer Motion", "Personal", "Portfolio"],
+      "description": "This is my personal portfolio project. I built this while trying out Framer Motion.",
+      "image": "/portfolioScreenShot.png",
+      "githubURL": "",
+      "liveURL": ""
+    },
+    {
+      "title": "healthcompanion",
+      "techstack": ["Rails", "TailWindCSS", "PostgreSQL", "MongoDB", "School"],
+      "description": "Trimester Project based off Ruby on Rails showcasing the usage of Relational and Non-Relational DBMS.",
+      "image": "/health-companion.png",
+      "githubURL": "",
+      "liveURL": "https://healthcompanion.loosiongyu.me/"
+    }
+  ],
+
+  "AboutMe": {
+    
+  }
 }
