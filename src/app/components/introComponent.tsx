@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 const IntroComponent = () => {
     return (
-      <section className="
+      <section id="start" className="
         h-screen items-center flex justify-center w-full
         phone:flex-col
         tablet:mx-auto laptop:mx-auto desktop:mx-auto

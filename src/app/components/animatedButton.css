@@ -191,3 +191,36 @@ a {
   width: 100%;
   left: 0;
 }
+
+/* credits to https://uiverse.io/vinodjangid07/afraid-falcon-17 */
+.backToStart {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.backToStart:hover {
+  transition-duration: 0.3s;
+  background-color: #7241FF;
+  align-items: center;
+}
