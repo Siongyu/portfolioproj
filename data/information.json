@@ -34,6 +34,11 @@
   ],
 
   "AboutMe": {
-    
+    "profilePic": "siongyu.jpeg",
+    "information": [
+      "A short introduction of myself. I am currently undertaking a degree in Computing Science. I am passionate about discovering new technologies and getting my hands dirty on it. I have interest towards web development and data analytics.",
+      "My journey started when I first enrolled into Game Development, subsequently switching courses to Financial Informatics where I am exposed to various programming languages and technologies. I had the opportunity to dive into bits of data analytics as well, learning the basis of data cleaning and visualization.",
+      "I am a team player, enjoy working with people. Not a leader myself but a follower instead. In web development, I am more inclined towards front-end development but ultimately, I am open to learning new things and exploring new technologies."
+    ]
   }
 }
