@@ -24,7 +24,7 @@ const IntroComponent = () => {
                 className="text-6xl font-bold phone:text-2xl tablet:text-3xl laptop:text-4xl"
               />
               <span className="phone:text-xl tablet:text-2xl laptop:text-3xl">
-                , I'm <span className="text-6xl font-bold phone:text-2xl tablet:text-3xl laptop:text-4xl">Siong Yu</span>
+                , I&apos;m <span className="text-6xl font-bold phone:text-2xl tablet:text-3xl laptop:text-4xl">Siong Yu</span>
               </span>
             </div>
             <div>
