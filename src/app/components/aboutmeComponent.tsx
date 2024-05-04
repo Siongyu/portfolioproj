@@ -8,7 +8,7 @@ const AboutMeComponent = () => {
   const isInView = useInView(ref, { amount: 0.5 });
 
   return (
-    <section id="about" className="h-screen">
+    <section id="about" className="h-[70vh] phone:h-screen tablet:h-[150svh]">
       <div className="flex flex-col">
         <AnimatedText 
           text="A little about me..."

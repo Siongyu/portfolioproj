@@ -19,7 +19,7 @@
       "title": "Portfolio",
       "techstack": ["NextJs", "TailWindCSS", "Framer Motion", "Personal", "Portfolio"],
       "description": "This is my personal portfolio project. I built this while trying out Framer Motion and practising screen responsive design.",
-      "image": "/portfolioScreenShot.png",
+      "image": "/project_sniplets/portfolioScreenShot.png",
       "githubURL": "",
       "liveURL": ""
     },
@@ -27,7 +27,7 @@
       "title": "healthcompanion",
       "techstack": ["Rails", "TailWindCSS", "PostgreSQL", "MongoDB", "School"],
       "description": "Trimester Project based off Ruby on Rails showcasing the usage of Relational and Non-Relational DBMS.",
-      "image": "/health-companion.png",
+      "image": "/project_sniplets/health-companion.png",
       "githubURL": "",
       "liveURL": "https://healthcompanion.loosiongyu.me/"
     }
