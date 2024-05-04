@@ -17,6 +17,7 @@ const AboutMeComponent = () => {
         <div 
           className="mt-16 mx-auto justify-center items-center gap-56 flex
             laptop:w-8/12 desktop:w-8/12
+            phone:mt-8
             tablet:gap-40 tablet:mt-10"
         >
           {isInView && (

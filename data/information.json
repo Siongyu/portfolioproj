@@ -18,7 +18,7 @@
     {
       "title": "Portfolio",
       "techstack": ["NextJs", "TailWindCSS", "Framer Motion", "Personal", "Portfolio"],
-      "description": "This is my personal portfolio project. I built this while trying out Framer Motion.",
+      "description": "This is my personal portfolio project. I built this while trying out Framer Motion and practising screen responsive design.",
       "image": "/portfolioScreenShot.png",
       "githubURL": "",
       "liveURL": ""
