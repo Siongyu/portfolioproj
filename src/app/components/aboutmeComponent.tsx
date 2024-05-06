@@ -8,7 +8,7 @@ const AboutMeComponent = () => {
   const isInView = useInView(ref, { amount: 0.5 });
 
   return (
-    <section id="about" className="h-[70vh] phone:h-screen tablet:h-[150svh]">
+    <section id="about" className="h-[70svh] phone:h-[120svh] tablet:h-screen laptop:h-[150svh]">
       <div className="flex flex-col">
         <AnimatedText 
           text="A little about me..."
@@ -16,7 +16,7 @@ const AboutMeComponent = () => {
         />
         <div 
           className="mt-16 mx-auto justify-center items-center gap-56 flex
-            laptop:w-8/12 desktop:w-8/12
+            laptop:w-9/12 desktop:w-full
             phone:mt-8
             tablet:gap-40 tablet:mt-10"
         >
@@ -28,7 +28,9 @@ const AboutMeComponent = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: isInView ? 1 : 0}}
               transition={{ duration: 1.5 }}
-              className="rounded-full w-auto h-auto justify-start phone:hidden tablet:w-60 tablet:h-60"
+              className="rounded-full w-auto h-auto justify-start phone:hidden 
+              laptop:w-96 laptop:h-96
+              tablet:w-80 tablet:h-80"
             />
           </>
           )}
@@ -36,7 +38,7 @@ const AboutMeComponent = () => {
             {isInView && information.AboutMe.information.map((text, index) => (
               <motion.span 
                 key={index}
-                className="text-justify text-2xl mb-10 phone:text-base phone:mb-5 tablet:text-sm tablet:mb-5"
+                className="text-justify text-2xl mb-10 phone:text-base phone:mb-5 tablet:text-xl tablet:mb-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isInView ? 1 : 0}}
                 transition={{ duration: 1.5, delay: index * 0.5}}
