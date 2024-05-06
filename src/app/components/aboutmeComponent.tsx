@@ -8,17 +8,17 @@ const AboutMeComponent = () => {
   const isInView = useInView(ref, { amount: 0.5 });
 
   return (
-    <section id="about" className="h-[70svh] phone:h-[120svh] tablet:h-screen laptop:h-[150svh]">
+    <section id="about" className="tablet:h-[120svh] laptop:h-[120svh] desktop:h-[70svh] phone:h-[120svh]">
       <div className="flex flex-col">
         <AnimatedText 
           text="A little about me..."
-          className="font-bold text-center text-4xl laptop:text-5xl desktop:text-5xl"
+          className="font-bold text-center text-4xl laptop:text-5xl desktop:text-6xl"
         />
         <div 
           className="mt-16 mx-auto justify-center items-center gap-56 flex
-            laptop:w-9/12 desktop:w-full
+            laptop:w-9/12 desktop:w-7/12
             phone:mt-8
-            tablet:gap-40 tablet:mt-10"
+            tablet:mt-10 tablet:flex-col tablet:gap-10"
         >
           {isInView && (
             <>
@@ -38,7 +38,7 @@ const AboutMeComponent = () => {
             {isInView && information.AboutMe.information.map((text, index) => (
               <motion.span 
                 key={index}
-                className="text-justify text-2xl mb-10 phone:text-base phone:mb-5 tablet:text-xl tablet:mb-5"
+                className="text-justify text-3xl mb-10 phone:text-base phone:mb-5 tablet:text-xl tablet:mb-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isInView ? 1 : 0}}
                 transition={{ duration: 1.5, delay: index * 0.5}}

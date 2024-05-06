@@ -4,7 +4,7 @@ import information from "../../../data/information.json";
 
 const ProjectComponent = () => {
   return (
-    <section id="project" className="h-[70vh] phone:h-screen tablet:h-[200svh]">
+    <section id="project" className="h-screen phone:h-[120svh] tablet:h-screen laptop:h-screen">
       <div className="flex flex-col">
         <AnimatedText 
           text="Project(s)"
