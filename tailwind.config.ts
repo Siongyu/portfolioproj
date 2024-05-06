@@ -8,8 +8,8 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      'phone': {'min': '300px', 'max': '599px'},
-      'tablet': {'min': '600px', 'max': '1366px'},
+      'phone': {'min': '300px', 'max': '949px'},
+      'tablet': {'min': '950px', 'max': '1366px'},
       'laptop': '1280px',
       'desktop': '2560px',
     },

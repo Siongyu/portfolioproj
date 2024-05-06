@@ -17,7 +17,7 @@ const ProjectCard = ({
 }: ProjectCardProps & { githubUrl?: string; liveUrl?: string;
 }) => {
   return (
-    <div className="w-96 h-min phone:w-60 phone:w-60 tablet:w-60 tablet:w-60 rounded-2xl">
+    <div className="w-96 h-min phone:w-60 phone:w-60 rounded-2xl">
       <div className="border rounded-2xl w-96 h-96 phone:w-60 phone:h-60 tablet:w-60 tablet:h-60">
         <img
           src={imageUrl}
